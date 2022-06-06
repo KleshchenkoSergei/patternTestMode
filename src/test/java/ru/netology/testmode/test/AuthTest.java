@@ -29,7 +29,7 @@ public class AuthTest {
         $("[data-test-id=\"login\"] [class=\"input__control\"][name=\"login\"]").setValue(registeredUser.getLogin()); // input login
         $("[data-test-id=\"password\"] [class=\"input__control\"][name=\"password\"]").setValue(registeredUser.getPassword()); // input password
         $$("button[class*=\"button\"][data-test-id=\"action-login\"]").findBy(text("Продолжить")).click(); // press next button
-        $("h2[class*=\"heading\"]").shouldHave(text("Личный кабинет"), Duration.ofMillis(15000)); // assert login//
+        $("h2[class*=\"heading\"]").shouldHave(text("Check_Failed_testЛичный кабинет"), Duration.ofMillis(15000)); // assert login//
     }
 
 
